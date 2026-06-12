@@ -56,8 +56,22 @@ def index():
             <title>24FI023自己紹介</title>
         </head>
         <body>
-            <div class="bg-blue-600">
-                <h1 class="text-5xl">学籍番号:24FI023</h1>
+            <div class="bg-amber-400 mt-10 p-5 text-stone-800">
+                <h1 class="text-5xl font-bold">学籍番号:24FI023</h1>
+            </div>
+            <div class="pl-7 bg-stone-100 ">
+                <h2 class="pt-3 text-2xl font-bold">最近好きなもの</h2>
+                <ul class="mt-2">
+                    <li>・観葉植物</li>
+                    <li>・キーボード</li>
+                    <li>・スピーカー</li>
+                    <li>・サイクリング</li>
+                </ul>
+                <h2 class="pt-3 text-2xl font-bold">最近嫌いなもの</h2>
+                <ul class="mt-2">
+                    <li>・室内と外の気温差</li>
+                    <li>・就活早期化</li>
+                </ul>
             </div>
         </body>
     </html>
