@@ -1,0 +1,3 @@
+curl -X POST "https://render-fastapi-2wqh.onrender.com/sagisi?money=5000"
+
+curlで、postを引数付きで送るとき、?で指定する
