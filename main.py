@@ -46,8 +46,8 @@ async def give_present(present):
     return {"response": f"サーバです。メリークリスマス！ {present}ありがとう。お返しはキャンディーです。"}  # f文字列というPythonの機能を使っている
 
 @app.post("/sagisi")
-async def give_money(money):
+async def give_money(money :int):
     return {"response": f"サーバです。{money}円ありがとうございます。お返しに{half(money)}円お渡しします。"}
 
 def half(n):
-    return n/2
+    return n//2
