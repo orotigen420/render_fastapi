@@ -52,10 +52,13 @@ def index():
     html_content = """
     <html>
         <head>
-            <title>テストテスト</title>
+            <script src="https://cdn.tailwindcss.com"></script>
+            <title>24FI023自己紹介</title>
         </head>
         <body>
-            <h1>見てますかー笑</h1>
+            <div class="bg-blue-600">
+                <h1 class="text-5xl">学籍番号:24FI023</h1>
+            </div>
         </body>
     </html>
     """
