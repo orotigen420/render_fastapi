@@ -31,3 +31,12 @@ def omikuji():
     ]
 
     return omikuji_list[random.randrange(10)]
+
+@app.get("/lunch")
+def lanch():
+    lanch_list=[
+        "おにぎり",
+        "担々麺",
+        "おまえ"
+    ]
+    return lanch_list[random.randrange(3)]
