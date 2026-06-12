@@ -2,6 +2,8 @@ from typing import Optional
 
 from fastapi import FastAPI
 
+from fastapi.responses import HTMLResponse
+
 import random  # randomライブラリを追加
 
 app = FastAPI()
@@ -44,6 +46,20 @@ def lanch():
 @app.post("/present")
 async def give_present(present):
     return {"response": f"サーバです。メリークリスマス！ {present}ありがとう。お返しはキャンディーです。\n"}  # f文字列というPythonの機能を使っている
+
+@app.get("/index")
+def index():
+    html_content = """
+    <html>
+        <head>
+            <title>テストテスト</title>
+        </head>
+        <body>
+            <h1>見てますかー笑</h1>
+        </body>
+    </html>
+    """
+    return HTMLResponse(content=html_content, status_code=200)
 
 @app.post("/sagisi")
 async def give_money(money :int):
